@@ -1,0 +1,138 @@
+/* Register Design.css */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("city.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Correctly defines the border */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  color: #dbdbdb;
+  margin-bottom: 20px; /* Add margin bottom to create space for the error message */
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  
+}
+
+.wrapper h2::before {
+  color: #dbdbdb;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #000000;
+}
+
+.wrapper form {
+  color: #dbdbdb;
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  color: #dbdbdb;
+  height: 52px;
+  margin: 18px 0;
+}
+
+.input-box ::placeholder{
+  color: #dbdbdb;
+}
+
+form .input-box input {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #dbdbdb;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom-width: 2.5px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #ffffff;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #000000;
+  letter-spacing: 1px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #9a9a9a;
+}
+
+form .text h3 {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
+
+.error div{
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center; /* Center the error message */
+}
+
